@@ -1,4 +1,12 @@
+@use './header.scss';
 
-h1{
-    color: yellow;
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'League Gothic', sans-serif;
+  letter-spacing: .2rem;
+}
+
+body{
+    margin: 0 3rem;
 }
