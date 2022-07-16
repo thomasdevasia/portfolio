@@ -1,18 +1,19 @@
+.header{
+    &__logo{
+        height: 45px;
+        width: 140px;
+    }
+}
+
 .navbar{
     display: flex;
     justify-content: space-between;
-    &__logo{
-        height: 3rem;
-        width: 3rem;
-    }
-    &__list{
-        ul {
-            padding: 0;
-            display: flex;
-            list-style-type: none;
-            li{
-                margin: 0 0.2rem ;
-            }
+    ul{
+        padding: 0;
+        display: flex;
+        list-style-type: none;
+        li{
+            margin: 0 0.5rem ;
         }
     }
 }
