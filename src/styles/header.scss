@@ -1,7 +1,13 @@
 .header{
+
+    // border: 10px red solid;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
     &__logo{
         height: 45px;
         width: 140px;
+        transform: rotate(-3deg);
     }
 }
 

@@ -1,0 +1,61 @@
+@import './colors.scss';
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    // align-content: stretch;
+    &__area{
+        // flex-grow: 9999999;
+        width: 100%;
+    }
+    .socials{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        height: 85vh;
+        &__icon{
+            display: flex;
+            flex-direction: column;
+            svg{
+                padding-bottom: 1rem;
+                fill: #37284f;
+                cursor: pointer;
+                &:hover{
+                    fill: $color-secondary;
+                }
+            }
+        }
+        &::after{
+            content: "";
+            display: block;
+            width: 1px;
+            height: 95px;
+            margin: 0px auto;
+            background-color: $color-primary;
+        }
+    }
+    .email{
+        display:flex;
+        flex-direction: column;
+        justify-content: end;
+        // position: relative;
+        height: 85vh;
+        a{
+            color: $color-primary;
+            text-decoration: none;
+            padding-bottom: 0.7rem;
+            writing-mode: vertical-rl;
+            &:hover{
+                color: $color-secondary;
+            }
+        }
+        &::after{
+            content: "";
+            display: block;
+            width: 1px;
+            height: 95px;
+            margin: 0px auto;
+            background-color: $color-primary;
+        }
+    }
+}

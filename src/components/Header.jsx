@@ -4,7 +4,7 @@ import logo from '../images/signature-dark.png';
 const Header = () => {
 
     return(
-        <div className='Header'>
+        <div className='header'>
 
             <img src={logo} className="header__logo" alt="logo" />
 
@@ -19,7 +19,7 @@ const Header = () => {
 
             </div>
             
-            <a className='button' href='#resume'>Resume</a>
+            <a className='btn btn__secondary' href='#resume'>Resume</a>
 
         </div>
     )
