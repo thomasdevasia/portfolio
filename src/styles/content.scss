@@ -2,26 +2,34 @@
 
 .content{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    margin: 0 5rem;
     // align-content: stretch;
     &__area{
         // flex-grow: 9999999;
-        width: 100%;
+        // width: 100%;
+        // border:10px solid red;
+        width: 950px;
     }
     .socials{
         display: flex;
         flex-direction: column;
         justify-content: end;
-        height: 85vh;
+        // height: 85vh;
+        position: fixed;
+        bottom: 0;
+        left: 15px;
+        right: auto;
         &__icon{
             display: flex;
             flex-direction: column;
             svg{
-                padding-bottom: 1rem;
+                padding-bottom: 1.5rem;
                 fill: #37284f;
                 cursor: pointer;
                 &:hover{
                     fill: $color-secondary;
+                    transform: translateY(-0.3rem);
                 }
             }
         }
@@ -38,8 +46,11 @@
         display:flex;
         flex-direction: column;
         justify-content: end;
-        // position: relative;
-        height: 85vh;
+        position: fixed;
+        bottom: 0;
+        right: 15px;
+        left: auto;
+        // height: 85vh;
         a{
             color: $color-primary;
             text-decoration: none;
@@ -47,6 +58,7 @@
             writing-mode: vertical-rl;
             &:hover{
                 color: $color-secondary;
+                transform: translateY(-0.3rem);
             }
         }
         &::after{

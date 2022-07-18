@@ -1,6 +1,7 @@
 @use './header.scss';
 @use './content.scss';
 @use './About.scss';
+@use './components.scss';
 @import './colors.scss';
 
 // @import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
@@ -21,34 +22,16 @@
 //   letter-spacing: .2rem;
 // }
 
-h2{
-  font-family: 'Bodoni Moda', serif;
-  font-size: 3rem;
-  // font-weight: 10000rem;
-  // letter-spacing: .2rem;
-}
+// h2{
+//   font-family: 'Bodoni Moda', serif;
+//   font-size: 3rem;
+//   font-weight: 10000rem;
+//   letter-spacing: .2rem;
+// }
 
 body{
-    margin: 0 3rem;
+    // margin: 0 3rem;
     font-family: 'Poppins', sans-serif;
     color: $color-primary;
 }
 
-.btn{
-    display: flex;
-    align-items: center;
-    border-radius: 2rem;
-    border-style: solid;
-    border-color: $color-secondary;
-    margin: 0.5rem 0;
-    text-decoration: none;
-    &__secondary{
-        background-color: $color-secondary;
-        color: white;
-        padding: 0 1rem;
-        &:hover{
-            background-color: white;
-            color: $color-secondary;
-        }
-    }
-}

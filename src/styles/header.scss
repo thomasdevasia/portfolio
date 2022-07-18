@@ -1,8 +1,11 @@
+@import './colors.scss';
+
 .header{
 
     // border: 10px red solid;
     display: flex;
     justify-content: space-between;
+    margin: 0 5rem;
     padding: 0.5rem 1rem;
     &__logo{
         height: 45px;
@@ -20,6 +23,11 @@
         list-style-type: none;
         li{
             margin: 0 0.5rem ;
+            font-weight: 900;
+            cursor: pointer;
+            &:hover{
+                color: $color-secondary;
+            }
         }
     }
 }

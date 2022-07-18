@@ -1,9 +1,10 @@
+import Profile from '../images/profile.jpg'
 
 const About = () => {
  return(
     <div className='about'>
         <div className='about__info'>
-            <h4>
+            <h4 className='font-bodoni'>
                 Hi, my name is 
             </h4>
             <h2>
@@ -15,9 +16,8 @@ const About = () => {
                 maybe a small para? or should be about the same?
             </p>
         </div>
-        <div className='about__image'>
 
-        </div>
+        <img className='about__image' src={Profile} alt="profile" />
     </div>
  )
 }

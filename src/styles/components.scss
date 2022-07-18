@@ -1,0 +1,38 @@
+@import  './colors.scss';
+
+.btn{
+    display: flex;
+    align-items: center;
+    border-radius: 2rem;
+    border-style: solid;
+    border-color: $color-secondary;
+    margin: 0.5rem 0;
+    text-decoration: none;
+    &__secondary{
+        background-color: $color-secondary;
+        color: white;
+        padding: 0 1rem;
+        &:hover{
+            background-color: white;
+            color: $color-secondary;
+        }
+    }
+}
+
+.font-bodoni{
+    font-family: 'Bodoni Moda', sans-serif;
+    font-weight: 600;
+}
+
+h4 {
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 900;
+    font-size: 1.1rem;
+    margin: 0;
+}
+h2{
+    font-size: 3rem;
+    font-weight: 10000rem;
+    margin: 0;
+
+}

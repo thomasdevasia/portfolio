@@ -23,7 +23,7 @@ function App() {
           </div>
         </div>
         
-        <div className='content_area'>
+        <div className='content__area'>
           <About />
         </div>
 
