@@ -1,4 +1,4 @@
-import Profile from '../images/profile.jpg'
+// import Profile from '../images/profile.jpg'
 
 const Intro = () => {
  return(
@@ -17,7 +17,7 @@ const Intro = () => {
             </p>
         </div>
 
-        <img className='intro__image' src={Profile} alt="profile" />
+        {/* <img className='intro__image' src={Profile} alt="profile" /> */}
     </div>
  )
 }
