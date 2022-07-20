@@ -1,6 +1,7 @@
 @use './header.scss';
 @use './content.scss';
-@use './About.scss';
+@use './about.scss';
+@use './intro.scss';
 @use './components.scss';
 @import './colors.scss';
 
@@ -33,6 +34,6 @@ body{
     // margin: 0 3rem;
     font-family: 'Poppins', sans-serif;
     color: $color-primary;
-    background-color: #faf2f0;
+    background-color: $color-background;
 }
 

@@ -3,6 +3,7 @@ import {ReactComponent as Github} from './images/github.svg'
 import {ReactComponent as Linkedin} from './images/linkedin.svg'
 import {ReactComponent as Twitter} from './images/twitter.svg'
 import Header from './components/Header.jsx'
+import Intro from './components/Intro.jsx'
 import About from './components/About.jsx'
 
 function App() {
@@ -24,8 +25,10 @@ function App() {
         </div>
         
         <div className='content__area'>
+          <Intro />
           <About />
         </div>
+
 
         <div className='email'>
           <a href='mailto:tdevasia1997@gmail.com'>tdevasia1997@gmail.com</a>

@@ -13,7 +13,7 @@
         color: white;
         padding: 0 1rem;
         &:hover{
-            background-color: white;
+            background-color: $color-background;
             color: $color-secondary;
         }
     }
@@ -24,15 +24,24 @@
     font-weight: 600;
 }
 
+.font-thin{
+    font-weight: 100;
+}
+
+h2, h4, h5{
+    margin: 0;
+}
+
 h4 {
     font-family: 'Bodoni Moda', serif;
-    font-weight: 900;
+    // font-weight: 900;
     font-size: 1.1rem;
-    margin: 0;
 }
+
 h2{
     font-size: 3rem;
-    font-weight: 10000rem;
-    margin: 0;
-
+    font-weight: 500;
 }
+
+
+
