@@ -5,6 +5,7 @@ import {ReactComponent as Twitter} from './images/twitter.svg'
 import Header from './components/Header.jsx'
 import Intro from './components/Intro.jsx'
 import About from './components/About.jsx'
+import Experience from './components/Experience.jsx'
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <div className='content__area'>
           <Intro />
           <About />
+          <Experience />
         </div>
 
 

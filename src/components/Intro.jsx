@@ -2,7 +2,7 @@ import Profile from '../images/profile.jpg'
 
 const Intro = () => {
  return(
-    <div className='intro'>
+    <div className='intro section'>
         <div className='intro__info'>
             <h4 className='font-bodoni'>
                 Hi, my name is 

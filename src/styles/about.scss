@@ -1,25 +1,7 @@
 @import  './colors.scss';
 
 .about{
-    &__heading{
-        color: $color-secondary;
-        font-size: 3rem;
-        font-weight: 600;
-        display: flex;
-        position: relative;
-        &::after{
-            content: '';
-            display: block;
-            position: relative;
-            margin-left: 10px;
-            height: 1px;
-            width: 300px;
-            background-color: $color-tertiary;
-            top: 2.5rem;
-        }
-    }
     &__inner{
-        display: flex;
         justify-content: space-between;
         // &>*{
         //     margin: 0 1.4rem;
