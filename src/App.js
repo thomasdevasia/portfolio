@@ -1,11 +1,12 @@
 import './styles/index.scss'
-import {ReactComponent as Github} from './images/github.svg'
-import {ReactComponent as Linkedin} from './images/linkedin.svg'
-import {ReactComponent as Twitter} from './images/twitter.svg'
+import {ReactComponent as Github} from './images/logos/github.svg'
+import {ReactComponent as Linkedin} from './images/logos/linkedin.svg'
+import {ReactComponent as Twitter} from './images/logos/twitter.svg'
 import Header from './components/Header.jsx'
 import Intro from './components/Intro.jsx'
 import About from './components/About.jsx'
 import Experience from './components/Experience.jsx'
+import Projects from './components/Projects.jsx'
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Intro />
           <About />
           <Experience />
+          <Projects/>
         </div>
 
 

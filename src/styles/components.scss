@@ -45,7 +45,7 @@ h2{
 
 .section{
     &__heading{
-        color: $color-secondary;
+        color: $color-primary;
         font-size: 3rem;
         font-weight: 600;
         display: flex;
@@ -64,7 +64,7 @@ h2{
     &__inner{
         display: flex;
         margin: 2rem 0;
-        
+        color: black;
     }
 }
 
@@ -73,17 +73,22 @@ h2{
     flex-direction: column;
     margin: 0 1.5rem;
     button{
+        cursor: pointer;
         background-color: $color-background;
+        font-family: 'Bodoni Moda', sans-serif;
+        // font-size: 1.2rem;
+        font-weight: 600;
+        width: 7rem;
         padding: 0.5rem 1rem;
         border: 0;
-        border-left: 4px $color-tertiary solid ;
+        border-left: 2px $color-tertiary solid ;
         &.select{
-            border-left: 4px $color-secondary solid ;
-            color: $color-secondary;
+            border-left: 3px $color-highlight solid ;
+            color: $color-highlight ;
             background-color: #E0D0D3;
         }
         &:hover{
-            color: $color-secondary;
+            color: $color-highlight ;
             background-color: #E0D0D3;
         }
     }
@@ -105,4 +110,14 @@ h2{
             color: $color-secondary;
         }
     }
+}
+
+.highlight{
+    color: $color-highlight;
+}
+.hide{
+    display: none;
+}
+.projectlist{
+
 }
