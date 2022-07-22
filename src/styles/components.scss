@@ -79,12 +79,12 @@ h2{
         border-left: 4px $color-tertiary solid ;
         &.select{
             border-left: 4px $color-secondary solid ;
-            color: red;
-            background-color: yellow;
+            color: $color-secondary;
+            background-color: #E0D0D3;
         }
         &:hover{
-            color: red;
-            background-color: yellow;
+            color: $color-secondary;
+            background-color: #E0D0D3;
         }
     }
 }
@@ -100,9 +100,9 @@ h2{
             content: "▹";
             position: absolute;
             left: 0px;
-            top: 0px;
-            // font-size: 25px;
-            color: green;
+            top: -5px;
+            font-size: 25px;
+            color: $color-secondary;
         }
     }
 }
