@@ -1,0 +1,10 @@
+.blogs{
+    .section__inner{
+        display: flex;
+        flex-direction: column;
+        img{
+            height: 500px;
+            width: 500px;
+        }
+    }
+}

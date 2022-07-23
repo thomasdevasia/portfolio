@@ -61,6 +61,14 @@ h2{
             top: 2.5rem;
         }
     }
+    &__heading-center{
+        color: $color-primary;
+        font-size: 3rem;
+        font-weight: 900;
+        display: flex;
+        font-family: 'Bodoni Moda', sans-serif;
+        justify-content: center;
+    }
     &__inner{
         margin: 2rem 0;
         color: black;

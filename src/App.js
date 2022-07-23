@@ -7,6 +7,9 @@ import Intro from './components/Intro.jsx'
 import About from './components/About.jsx'
 import Experience from './components/Experience.jsx'
 import Projects from './components/Projects.jsx'
+import Blogs from './components/Blogs.jsx'
+import Resume from './components/Resume.jsx'
+import Footer from './components/Footer.jsx'
 
 function App() {
   return (
@@ -31,6 +34,9 @@ function App() {
           <About />
           <Experience />
           <Projects/>
+          {/* <Blogs/> */}
+          <Resume/>
+          <Footer/>
         </div>
 
 
