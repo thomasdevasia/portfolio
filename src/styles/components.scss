@@ -62,9 +62,10 @@ h2{
         }
     }
     &__inner{
-        display: flex;
         margin: 2rem 0;
         color: black;
+        display: flex;
+        // flex-direction: row;
     }
 }
 
@@ -112,12 +113,103 @@ h2{
     }
 }
 
+.grid{
+    display: grid;
+    &-2{
+        grid-template-columns: repeat(2, minmax(140px, 200px));
+    }
+}
+
 .highlight{
     color: $color-highlight;
 }
+
 .hide{
     display: none;
 }
+
 .projectlist{
+    padding: 0;
+    .project{
+        margin: 1rem;
+        padding: 2rem;
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        align-items: center;
+        overflow: hidden;
+        &-image, &-content{
+            grid-row: 1/2;
+        }
+        &-image{
+            img{
+                box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+                width: 100%;
+                height: 100%;
+                border-radius: 0.5rem;
+                cursor: pointer;
+            }
+            z-index: 1;                        
+        }
+        &-content{
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-content: space-between;
+
+            transition:all 0.5s ease-in-out;
+            .project-info{
+                box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+                background-color: #E0D0D3;
+                border-radius: 0.2rem;
+                padding: 1.5rem 1rem;
+                margin: 1rem 0;
+            }
+            .project-techStack{
+                display: flex;
+                list-style: none;
+                li{
+                    margin: 0.5rem;
+                }                
+                padding: 0;
+            }
+        }
+        &.project-left{
+            .project-image{
+                grid-column: 6/-1;
+                &:hover{
+                    & + div{
+                        transform: translateX(-200px);
+                        opacity: 0.1;
+                    }
+                }
+            }
+            .project-content{
+                grid-column: 1/9;
+                .project-techStack{
+                    justify-content: flex-start;
+                }
+            }
+        }
+        &.project-right{
+            .project-image{
+                grid-column: 1/8;
+                &:hover{
+                    & + div{
+                        transform: translateX(200px);
+                        opacity: 0.1;
+                    }
+                }
+            }
+            .project-content{
+                grid-column: 5/-1;
+                text-align: right;
+                .project-techStack{
+                    justify-content: flex-end;
+                }
+            }
+        }
+    }
 
 }
