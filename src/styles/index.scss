@@ -6,6 +6,7 @@
 @use './resume.scss';
 @use './footer.scss';
 @use './components.scss';
+@use './animations.scss';
 @import './colors.scss';
 
 // @import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
@@ -36,7 +37,7 @@
 // }
 
 body{
-    // margin: 0 3rem;
+    margin: 0 ;
     font-family: 'Poppins', sans-serif;
     color: $color-primary;
     background-color: $color-background;

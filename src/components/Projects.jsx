@@ -53,7 +53,7 @@ const Projects = () => {
             <div className="section__inner">
                 <ul className="projectlist">
                     {projects.map(project => (
-                        <li className={`project ${project.id%2===0? 'project-left':'project-right'}`}>
+                        <li className={`project ${project.id%2===0? 'project-left':'project-right'}`} key={project.id}>
                             <div className="project-image">
                                 <img src={project.image} alt={project.title} />
                             </div>
@@ -61,8 +61,8 @@ const Projects = () => {
                                 <div className="project-title">{project.title}</div>
                                 <div className="project-info">{project.info}</div>
                                 <ul className="project-techStack">
-                                    {project.techStack.map(tech => (
-                                        <li>{tech}</li>
+                                    {project.techStack.map((tech,idx) => (
+                                        <li key={idx}>{tech}</li>
                                     ))}
                                 </ul>                            
                                 <div className="project-link">

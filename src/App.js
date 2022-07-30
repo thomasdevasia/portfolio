@@ -18,11 +18,8 @@ function App() {
       <Header />
 
       <div className='content'>
-        <div className='socials'>
+        <div className='socials fadein fadein-14'>
           <div className='socials__icon'>
-            {/* <img src={github}  alt="github" />
-            <img src={linkedin}  alt="linkedin" />
-            <img src={twitter}  alt="twitter" /> */}
             <Github/>
             <Linkedin/>
             <Twitter/>
@@ -40,7 +37,7 @@ function App() {
         </div>
 
 
-        <div className='email'>
+        <div className='email fadein fadein-14'>
           <a href='mailto:tdevasia1997@gmail.com'>tdevasia1997@gmail.com</a>
         </div>
       

@@ -2,8 +2,8 @@
 
 const Intro = () => {
  return(
-    <div className='intro section'>
-        <div className='intro__info'>
+    <div className='intro section '>
+        <div className='intro__info slidein slidein-12'>
             <h4 className='font-bodoni'>
                 Hi, my name is 
             </h4>
