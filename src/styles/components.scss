@@ -82,8 +82,10 @@ h2{
     display: flex;
     flex-direction: column;
     margin: 0 1.5rem;
+    transition: all 0.5s ease-in-out;
     button{
         cursor: pointer;
+        transition: all 0.5s ease-in-out;
         background-color: $color-background;
         font-family: 'Bodoni Moda', sans-serif;
         // font-size: 1.2rem;
