@@ -11,6 +11,10 @@ import Projects from './components/Projects.jsx'
 import Resume from './components/Resume.jsx'
 import Footer from './components/Footer.jsx'
 
+window.onbeforeunload = function() {
+  window.scrollTo(0, 0);
+}
+
 function App() {
   return (
     <div className="App">

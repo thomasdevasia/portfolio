@@ -18,8 +18,12 @@
     }
 }
 
-.slidein{
+.initialState{
+    opacity: 0;
+    transform: translateY(10px);
+}
 
+.slidein{
     animation-duration: 0.2s;
     animation-name: slidein;
     animation-timing-function: ease-in;

@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useRef, useEffect,useState } from "react";
+
 
 const companies = [
     {
@@ -57,9 +58,25 @@ const Experience = () => {
     const handleClick = (key)=>{
         setSelection(key)
     }
+
+    const experienceRef = useRef();
+
+    
+    useEffect(() => {
+        const ObserverOptions = {
+            threshold: 0.6
+        }
+        const Observer = new IntersectionObserver((entries) => {
+            const entry = entries[0];
+            if (entry.isIntersecting) {
+                experienceRef.current.classList.add('slidein');
+            }
+        }, ObserverOptions);
+        Observer.observe(experienceRef.current);
+    }, [])
     
     return(
-        <div className='experience section'>
+        <div className='experience section initialState' ref={experienceRef}>
             <div className='section__heading'>Experience</div>
             <div className='section__inner'>
                 <div className='tablist'>

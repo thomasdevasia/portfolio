@@ -1,5 +1,7 @@
+import { useRef, useEffect } from 'react'
 import github from '../images/logos/github.svg'
 import P1 from '../images/projects/p1.png'
+
 
 
 const projects =[
@@ -45,8 +47,25 @@ const projects =[
                     }
                 ]
 const Projects = () => {
+
+    const projectRef = useRef();
+
+    
+    useEffect(() => {
+        const ObserverOptions = {
+            threshold: 0.2
+        }
+        const Observer = new IntersectionObserver((entries) => {
+            const entry = entries[0];
+            if (entry.isIntersecting) {
+                projectRef.current.classList.add('slidein');
+            }
+        }, ObserverOptions);
+        Observer.observe(projectRef.current);
+    }, [])
+
     return (
-        <div className="projects section">
+        <div className="projects section initialState" ref={projectRef}>
             <div className="section__heading">
                 What I've done
             </div>

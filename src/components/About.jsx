@@ -1,8 +1,27 @@
+import { useRef, useEffect } from 'react';
 import Profile from '../images/profile.jpg'
 
+
+
 const About = () => {
+    const aboutRef = useRef();
+    
+    
+    useEffect(() => {
+        const ObserverOptions = {
+            threshold: 0.5
+        }
+        const Observer = new IntersectionObserver((entries) => {
+            const entry = entries[0];
+            if (entry.isIntersecting) {
+                aboutRef.current.classList.add('slidein');
+            }
+        }, ObserverOptions);
+        Observer.observe(aboutRef.current);
+    }, [])
+    
     return(
-        <div className='about section'>
+        <div className='about section initialState' ref={aboutRef}>
             <div className='section__heading'>About Me</div>
             <div className='about__inner section__inner'>
                 <div className='about__inner__content'>
