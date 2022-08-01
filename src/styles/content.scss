@@ -1,9 +1,9 @@
 @import './colors.scss';
 
 .content{
-    display: flex;
-    justify-content: center;
-    margin: 0 5rem;
+    // display: flex;
+    // justify-content: center;
+    // margin: 0 5rem;
     &__area{
         max-width: 950px;
     }
@@ -73,5 +73,13 @@
         .socials, .email{
             display: none;
         }
+    }
+}
+
+@media (min-width: 560px){
+    .content{
+        display: flex;
+        justify-content: center;
+        margin: 0 5rem;
     }
 }

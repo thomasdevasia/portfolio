@@ -1,12 +1,23 @@
 @import './animations.scss';
 
 .intro{
-    margin: 2rem 1rem;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     align-items: center;
     height: 80vh;
-    &__image{
-        border-radius: 5rem;
+}
+
+@media (min-width: 560px){
+    .intro{
+        margin: 2rem 1rem;
     }
+    
+}
+
+@media (max-width: 768px){
+    .intro{
+        color: red;
+        // display: block;
+    }
+    
 }
