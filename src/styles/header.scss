@@ -78,3 +78,12 @@
         flex-grow: 0.25;
     }
 }
+
+@media (max-width: 560px){
+    .header{
+        padding: 0.5rem 1rem;
+    }
+    .navbar{
+        display: none;
+    }
+}
