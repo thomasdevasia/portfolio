@@ -76,7 +76,7 @@ const Experience = () => {
     }, [])
     
     return(
-        <div className='experience section initialState' ref={experienceRef}>
+        <div className='experience section initialState' ref={experienceRef} id='experience'>
             <div className='section__heading'>Experience</div>
             <div className='section__inner'>
                 <div className='tablist'>

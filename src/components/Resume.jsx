@@ -8,24 +8,52 @@ import ResumeImg from '../images/resume.png';
 const Resume = () => {
 
     const resumeRef = useRef();
+    const imgRef = useRef();
+    // let scale = useRef(1);
+    // const [scale, setScale] = useState(1)
 
-    let style = {
-        color:'#fff',
-    }
 
     const handleScroll = (e) => {
         // console.log('scrolled');
         const top = resumeRef.current.offsetTop;
+        const height = resumeRef.current.offsetHeight;
         // console.log(top, window.scrollY);
-        if (window.scrollY >= (top - 100) && window.scrollY <= (top + 100)) {
-            console.log('reached');
+        // let scrolled = window.scrollY / ( height - window.innerHeight )
+        // console.log(scrolled);
+        if (window.scrollY >= (top - 20) && window.scrollY <= (top + height)) {
+            // console.log('reached', height);
+            // setScale(1-percent);
+            let percent = (window.scrollY - top) / height;
+            if(percent>=0 && percent<=0.3) {
+                // imgRef.current.style.transform = `scale(${1-(percent+0.2)})`;
+                // scale = 1-percent;
+                // imgRef.current.style.opacity = `${1-(percent)}`;
+
+                // imgRef.current.style.position = 'sticky';
+                console.log(percent);
+            }
+            if(percent>0.3 ) {
+                // imgRef.current.style.position = 'relative';
+                // imgRef.current.style.transform = 'translateY(200%)';
+                // imgRef.current.style.transform = `scale(${scale})`;
+                imgRef.current.style.transform = `scale(${1-(percent)})`;
+                imgRef.current.style.opacity = `${1-(percent)}`;
+
+                console.log(percent);
+            }
+            else{
+                imgRef.current.style.transform = 'scale(1)';
+                imgRef.current.style.opacity = '1';
+            }
+            
         }
     }
     
     useEffect(() => {
 
         if(resumeRef.current) {
-            window.addEventListener('scroll', (e) => handleScroll())
+            window.addEventListener('scroll', (e) => handleScroll(e))
+            // console.log('added');
         }
 
 
@@ -42,10 +70,13 @@ const Resume = () => {
     }, [])
 
     return(
-        <div className="section initialState" id='resume' ref={resumeRef} style={style} onScroll={handleScroll}>
-            <div className="section__heading-center">Souvenier(add scroll effect)</div>
-            <div className='resume'>
-                <img src={ResumeImg} alt="resume" />
+        <div className="section resume initialState" id='resume' ref={resumeRef}  onScroll={handleScroll}>
+            <div className='image-wrapper' ref={imgRef}>
+                <img className='img' src={ResumeImg} alt="resume"  />
+                {/* <div className="img" ref={imgRef}></div> */}
+            </div>
+            <div className="img-text" >
+                <h1>Souvenier(add scroll effect)aaksdj aldjaldkj </h1>
             </div>
         </div>
     )

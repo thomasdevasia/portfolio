@@ -52,13 +52,16 @@
         justify-content: center;
         li{
             margin: 0 0.5rem ;
-            font-weight: 900;
             cursor: pointer;
-            &:hover{
+            // transform: translateY(-10px);
+            // opacity: 0;
+            a{
+                font-weight: 900;
+                text-decoration: none;
+            }
+            & a:hover{
                 color: $color-secondary;
             }
-            transform: translateY(-10px);
-            opacity: 0;
         }
         @for $i from 1 through 4{
             li:nth-child(#{$i}){

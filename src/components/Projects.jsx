@@ -65,7 +65,7 @@ const Projects = () => {
     }, [])
 
     return (
-        <div className="projects section initialState" ref={projectRef}>
+        <div className="projects section initialState" ref={projectRef} id='portfolio'>
             <div className="section__heading">
                 What I've done
             </div>

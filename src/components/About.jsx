@@ -21,7 +21,7 @@ const About = () => {
     }, [])
     
     return(
-        <div className='about section initialState' ref={aboutRef}>
+        <div className='about section initialState' ref={aboutRef} id='about'>
             <div className='section__heading'>About Me</div>
             <div className='about__inner section__inner'>
                 <div className='about__inner__content'>
