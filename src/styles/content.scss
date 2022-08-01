@@ -4,12 +4,8 @@
     display: flex;
     justify-content: center;
     margin: 0 5rem;
-    // align-content: stretch;
     &__area{
-        // flex-grow: 9999999;
-        // width: 100%;
-        // border:10px solid red;
-        width: 950px;
+        max-width: 950px;
     }
     .socials{
         display: flex;
@@ -70,6 +66,12 @@
             height: 95px;
             margin: 0px auto;
             background-color: $color-primary;
+        }
+    }
+
+    @media (max-width: 700px) {
+        .socials, .email{
+            display: none;
         }
     }
 }

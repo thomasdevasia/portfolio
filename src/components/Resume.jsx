@@ -30,7 +30,7 @@ const Resume = () => {
                 // imgRef.current.style.opacity = `${1-(percent)}`;
 
                 // imgRef.current.style.position = 'sticky';
-                console.log(percent);
+                // console.log(percent);
             }
             if(percent>0.3 ) {
                 // imgRef.current.style.position = 'relative';
