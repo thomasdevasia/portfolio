@@ -64,19 +64,20 @@ const Experience = () => {
     
     useEffect(() => {
         const ObserverOptions = {
-            threshold: 0.6
+            threshold: 0.5
         }
         const Observer = new IntersectionObserver((entries) => {
             const entry = entries[0];
             if (entry.isIntersecting) {
                 experienceRef.current.classList.add('slidein');
+                console.log('slidein');
             }
         }, ObserverOptions);
         Observer.observe(experienceRef.current);
     }, [])
     
     return(
-        <div className='experience section initialState' ref={experienceRef} id='experience'>
+        <div className='experience section ' ref={experienceRef} id='experience'>
             <div className='section__heading'>Experience</div>
             <div className='section__inner'>
                 <div className='tablist'>

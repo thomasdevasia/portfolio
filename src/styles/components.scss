@@ -57,7 +57,7 @@ h2{
             position: relative;
             margin-left: 10px;
             height: 1px;
-            width: 300px;
+            width: 40%;
             background-color: $color-tertiary;
             top: 2.5rem;
         }
@@ -75,6 +75,7 @@ h2{
         color: black;
         display: flex;
         // flex-direction: row;
+        padding: 0 1rem;
     }
 }
 
