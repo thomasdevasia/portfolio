@@ -1,0 +1,8 @@
+.experience{
+    .section__inner{
+        @media (max-width:600px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

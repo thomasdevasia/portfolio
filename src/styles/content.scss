@@ -4,6 +4,7 @@
     // display: flex;
     // justify-content: center;
     // margin: 0 5rem;
+    margin: 0 3rem;
     &__area{
         max-width: 950px;
     }
@@ -69,17 +70,13 @@
         }
     }
 
-    @media (max-width: 700px) {
+    @media (max-width: 600px){
         .socials, .email{
             display: none;
         }
+        // display: flex;
+        // justify-content: center;
+        margin: 0 1rem;
     }
 }
 
-@media (min-width: 560px){
-    .content{
-        display: flex;
-        justify-content: center;
-        margin: 0 5rem;
-    }
-}
