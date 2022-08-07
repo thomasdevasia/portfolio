@@ -9,43 +9,40 @@ const Resume = () => {
 
     const resumeRef = useRef();
     const imgRef = useRef();
-    // let scale = useRef(1);
-    // const [scale, setScale] = useState(1)
 
 
     const handleScroll = (e) => {
-        // console.log('scrolled');
         const top = resumeRef.current.offsetTop;
         const height = resumeRef.current.offsetHeight;
-        // console.log(top, window.scrollY);
-        // let scrolled = window.scrollY / ( height - window.innerHeight )
-        // console.log(scrolled);
-        if (window.scrollY >= (top - 20) && window.scrollY <= (top + height)) {
-            // console.log('reached', height);
-            // setScale(1-percent);
-            let percent = (window.scrollY - top) / height;
-            if(percent>=0 && percent<=0.3) {
-                // imgRef.current.style.transform = `scale(${1-(percent+0.2)})`;
-                // scale = 1-percent;
-                // imgRef.current.style.opacity = `${1-(percent)}`;
+        // if (window.scrollY >= (top - 20) && window.scrollY <= (top + height)) {
+        //     let percent = (window.scrollY - top) / height;
+        //     if(percent>=0 && percent<=0.3) {
 
-                // imgRef.current.style.position = 'sticky';
-                // console.log(percent);
-            }
-            if(percent>0.3 ) {
-                // imgRef.current.style.position = 'relative';
-                // imgRef.current.style.transform = 'translateY(200%)';
-                // imgRef.current.style.transform = `scale(${scale})`;
-                imgRef.current.style.transform = `scale(${1-(percent)})`;
-                imgRef.current.style.opacity = `${1-(percent)}`;
+        //     }
+        //     if(percent>0.3 ) {
+        //         imgRef.current.style.transform = `scale(${1-(percent)})`;
+        //         imgRef.current.style.opacity = `${1-(percent)}`;
 
-                console.log(percent);
-            }
-            else{
-                imgRef.current.style.transform = 'scale(1)';
-                imgRef.current.style.opacity = '1';
-            }
+        //         console.log(percent);
+        //     }
+        //     else{
+        //         imgRef.current.style.transform = 'scale(1)';
+        //         imgRef.current.style.opacity = '1';
+        //     }
             
+        // }
+        if(window.scrollY >= (top - 5) && window.scrollY <= (top + height)){
+            let percent = ((window.scrollY - top) / height);
+            console.log(percent);
+            if(percent > 0.01){
+                // console.log('done')
+                resumeRef.current.classList.add('scaleDown');
+                imgRef.current.classList.remove('scaleUp');
+            }
+            // if(percent  0.01){
+            //     resumeRef.current.classList.add('scaleDown');
+            //     resumeRef.current.classList.remove('scaleUp');
+            // }
         }
     }
     

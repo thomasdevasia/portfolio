@@ -7,13 +7,13 @@
     // overflow-y: scroll;
     // position: sticky;
     // top: 0;
-    height: 160vh;
-    width: auto;
+    // height: 100vh;
+    // width: auto;
     // border: 1px solid red;
     .image-wrapper{
         display: flex;
         justify-content: center;
-        position: sticky;
+        // position: sticky;
         top: 0;
         z-index: 1 !important;
         transition: all 0.5s ease-in-out;
@@ -42,4 +42,50 @@
         }
         // z-index: 1000;
     }
+
+    transition: all 0.5s ease-in-out;
+}
+.scaleDown{
+    .image-wrapper{
+        img{
+            height: 200px;
+            animation-name: scaleup;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+            z-index: 5;
+        }
+    }
+    .img-text{
+        color: aqua;
+        transform: translateY(-450px);
+        h1{
+            z-index: 10 !important;
+        }
+    }
+}
+
+.scaleUp{
+    .image-wrapper{
+        img{
+            height: 200px;
+            animation-name: scaledown;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+        }
+    }
+    .img-text{
+        color: aqua;
+    }
+}
+
+@keyframes scaleup {
+    from {transform: scale(1);}
+    to {transform: scale(0.5)}
+  }
+
+@keyframes scaledown {
+from {transform: scale(0.5);}
+to {transform: scale(1)}
 }
