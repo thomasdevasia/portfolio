@@ -12,8 +12,8 @@ const Resume = () => {
 
 
     const handleScroll = (e) => {
-        const top = resumeRef.current.offsetTop;
-        const height = resumeRef.current.offsetHeight;
+        const top = resumeRef.current.offsetTop - 50 ;
+        // const height = resumeRef.current.offsetHeight -100;
         // if (window.scrollY >= (top - 20) && window.scrollY <= (top + height)) {
         //     let percent = (window.scrollY - top) / height;
         //     if(percent>=0 && percent<=0.3) {
@@ -31,19 +31,33 @@ const Resume = () => {
         //     }
             
         // }
-        if(window.scrollY >= (top - 5) && window.scrollY <= (top + height)){
-            let percent = ((window.scrollY - top) / height);
-            console.log(percent, height, top);
-            if(percent > 0.01){
-                // console.log('done')
-                resumeRef.current.classList.add('scaleDown');
-                resumeRef.current.classList.remove('scaleUp');
-            }
-            if(percent < 0.01){
-                resumeRef.current.classList.add('scaleUp');
-                resumeRef.current.classList.remove('scaleDown');
-            }
+        // let prevPercent = -1;
+        // console.log(window.scrollY, top)
+        if(window.scrollY > top){
+            // console.log('done')
+            resumeRef.current.classList.add('scaleDown');
+            resumeRef.current.classList.remove('scaleUp');
         }
+        if(window.scrollY < top){
+            resumeRef.current.classList.add('scaleUp');
+            resumeRef.current.classList.remove('scaleDown');
+        }
+        // if(window.scrollY >= (top) ){
+        //     let percent = ((window.scrollY - top) / height);
+
+        //     console.log(percent, height, top);
+        //     if(percent > 0.02){
+        //         // console.log('done')
+        //         resumeRef.current.classList.add('scaleDown');
+        //         resumeRef.current.classList.remove('scaleUp');
+        //     }
+        //     if(percent < 0.02){
+        //         console.log('happened')
+        //         resumeRef.current.classList.add('scaleUp');
+        //         resumeRef.current.classList.remove('scaleDown');
+        //     }
+        //     // prevPercent = percent;
+        // }
     }
     
     useEffect(() => {
