@@ -33,16 +33,16 @@ const Resume = () => {
         // }
         if(window.scrollY >= (top - 5) && window.scrollY <= (top + height)){
             let percent = ((window.scrollY - top) / height);
-            console.log(percent);
+            console.log(percent, height, top);
             if(percent > 0.01){
                 // console.log('done')
                 resumeRef.current.classList.add('scaleDown');
-                imgRef.current.classList.remove('scaleUp');
+                resumeRef.current.classList.remove('scaleUp');
             }
-            // if(percent  0.01){
-            //     resumeRef.current.classList.add('scaleDown');
-            //     resumeRef.current.classList.remove('scaleUp');
-            // }
+            if(percent < 0.01){
+                resumeRef.current.classList.add('scaleUp');
+                resumeRef.current.classList.remove('scaleDown');
+            }
         }
     }
     
@@ -70,7 +70,6 @@ const Resume = () => {
         <div className="section resume initialState" id='resume' ref={resumeRef}  onScroll={handleScroll}>
             <div className='image-wrapper' ref={imgRef}>
                 <img className='img' src={ResumeImg} alt="resume"  />
-                {/* <div className="img" ref={imgRef}></div> */}
             </div>
             <div className="img-text" >
                 <h1>Souvenier(add scroll effect)aaksdj aldjaldkj </h1>
