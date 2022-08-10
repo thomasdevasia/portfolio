@@ -1,12 +1,19 @@
 @import './colors.scss';
 
 .content{
-    // display: flex;
-    // justify-content: center;
+    @media (min-width:1280px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     // margin: 0 5rem;
     margin: 0 3rem;
     &__area{
         max-width: 950px;
+        // width: 100%;
+        // display: flex;
+        // flex-direction: column;
     }
     .socials{
         display: flex;

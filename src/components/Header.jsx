@@ -1,4 +1,8 @@
 import logo from '../images/signature-dark.png';
+import {ReactComponent as Menu} from '../images/list.svg'
+import {ReactComponent as Close} from '../images/x-lg.svg'
+
+
 
 let prevScrollY = 0;
 window.addEventListener('scroll', () => {
@@ -20,14 +24,26 @@ window.addEventListener('scroll', () => {
 })
 
 
-const Header = () => {
+const Header = ({handleClick,isOpen}) => {
+
+    // const [isOpen, setIsOpen] = useState(false)
+    // const handleMenuClick = (option)=>{
+    //     if (option===1){
+    //         handleClick(1)
+    //         setIsOpen(true)
+    //     }
+    //     else{
+    //         handleClick(0)
+    //         setIsOpen(false)
+    //     }
+    // }
 
     return(
         <div className='header' id='header'>
 
             <img src={logo} className='header__logo fadein' alt="logo" />
 
-            <div className='navbar'>    
+            <div className='navbar '>    
 
                 <ul>
                     <li> <a href='#about'> About </a> </li>
@@ -38,7 +54,13 @@ const Header = () => {
 
                 <a className='btn btn__secondary dropin dropin-1' href='#resume'>Resume</a>
             </div>
-            
+
+            <div className="menuButton" >
+                <Menu className={isOpen?'hideb':''} onClick={()=>handleClick(1)} />
+                <Close className={!isOpen?'hideb':''} onClick={()=>handleClick(0)} />
+                {/* <Menu className={isOpen?'hideb':''} onClick={()=>handleMenuClick(1)} />
+                <Close className={!isOpen?'hideb':''} onClick={()=>handleMenuClick(0)} /> */}
+            </div>            
 
         </div>
     )
