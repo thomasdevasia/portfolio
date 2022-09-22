@@ -47,9 +47,9 @@ function App() {
       <div className='content'>
         <div className='socials fadein fadein-14'>
           <div className='socials__icon'>
-            <Github/>
-            <Linkedin/>
-            <Twitter/>
+            <a href="https://github.com/thomasdevasia" target="_blank" rel="noopener noreferrer"> <Github/> </a>
+            <a href="https://www.linkedin.com/in/thomas-devasia1997/" target="_blank" rel="noopener noreferrer"> <Linkedin/> </a>
+            <a href="https://twitter.com/ThomasDev1997" target="_blank" rel="noopener noreferrer"> <Twitter/> </a>
           </div>
         </div>
         

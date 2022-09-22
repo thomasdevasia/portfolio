@@ -7,7 +7,7 @@ import P1 from '../images/projects/p1.png'
 const projects =[
                     {
                         id: 1,
-                        title: 'Project 1',
+                        title: 'PDF4me QNAP App',
                         info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe officia quidem quaerat placeat distinctio dolorem.',
                         techStack: ['JavaScript', 'React', 'JavaScript', 'React', 'JavaScript'],
                         link: 'https://www.google.com',
@@ -15,7 +15,7 @@ const projects =[
                     },
                     {
                         id: 2,
-                        title: 'Project 2',
+                        title: 'Portfolio',
                         info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe officia quidem quaerat placeat distinctio dolorem.',
                         techStack: ['JavaScript', 'React', 'JavaScript', 'React', 'JavaScript'],
                         link: 'https://www.google.com',
@@ -23,7 +23,7 @@ const projects =[
                     },
                     {
                         id: 3,
-                        title: 'Project 3',
+                        title: 'Stock Prediction',
                         info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe officia quidem quaerat placeat distinctio dolorem.',
                         techStack: ['JavaScript', 'React', 'JavaScript', 'React', 'JavaScript'],
                         link: 'https://www.google.com',
@@ -31,7 +31,7 @@ const projects =[
                     },
                     {
                         id: 4,
-                        title: 'Project 4',
+                        title: 'Gesture Keyboard',
                         info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe officia quidem quaerat placeat distinctio dolorem.',
                         techStack: ['JavaScript', 'React', 'JavaScript', 'React', 'JavaScript'],
                         link: 'https://www.google.com',
@@ -39,7 +39,7 @@ const projects =[
                     },
                     {
                         id: 5,
-                        title: 'Project 5',
+                        title: 'Visualizing Nobel laureates using Dash',
                         info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime totam laborum officia rem tenetur? Omnis, illo sit adipisci aliquid officiis quas et voluptates quis libero blanditiis vel sequi quidem ut.',
                         techStack: ['JavaScript', 'React', 'JavaScript', 'React', 'JavaScript'],
                         link: 'https://www.google.com',

@@ -1,6 +1,6 @@
 import { useRef, useEffect } from 'react';
 import ResumeImg from '../images/resume.png';
-
+import resume from '../resume.pdf';
 // document.getElementById('resume').addEventListener('scroll', (e) => {
 //     console.log('clicked');
 // })
@@ -86,7 +86,9 @@ const Resume = () => {
                 <img className='img' src={ResumeImg} alt="resume"  />
             </div>
             <div className="img-text" >
-                <h1>Souvenier(add scroll effect)aaksdj aldjaldkj </h1>
+                {/* <h1>A little souvenir? <br/> <a className='btn btn__secondary' href='#resume'>Download</a> </h1> */}
+                <h2 className='font-bodoni'>A little souvenir?</h2>
+                <a className='btn btn__secondary' href={resume} download='Thomas Devasia Resume'>Download</a>
             </div>
         </div>
     )

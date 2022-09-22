@@ -3,49 +3,39 @@ import { useRef, useEffect,useState } from "react";
 
 const companies = [
     {
-        name: 'ABC',
+        name: 'Ynoox',
         key: 1,
         role: 'Software Engineer',
         date: 'Jan 2019 - Present',
         works:[
-            'lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eum ut ipsam ducimus fugit suscipit doloribus animi commodi cumque ratione earum obcaecati deleniti, quas consequuntur! Praesentium, ipsam! Illum, reiciendis est.',
-            'lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eum ut ipsam ducimus fugit suscipit doloribus animi commodi cumque ratione earum obcaecati deleniti, quas consequuntur! Praesentium, ipsam! Illum, reiciendis est.',
-            'lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eum ut ipsam ducimus fugit suscipit doloribus animi commodi cumque ratione earum obcaecati deleniti, quas consequuntur! Praesentium, ipsam! Illum, reiciendis est.',
-            'lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eum ut ipsam ducimus fugit suscipit doloribus animi commodi cumque ratione earum obcaecati deleniti, quas consequuntur! Praesentium, ipsam! Illum, reiciendis est.'
+            'Worked on a document classifier model using machine learning to classify the documents based on types of documents.',
+            "Collaborated on building Node and Python-based applications as per client's requirements.",
+            "Providing support to customers by resolving any bugs and adding new features to the application. Thus enhancing the user experience.",
+            "Using Postman to create Postman API Collections to access various Features.",
+            "Building modules for zapier and ....."
+
         ]
     },
     {
-        name: 'CDE',
+        name: 'Ynoox (Intern)',
         key: 2,
-        role: 'Software Engineer',
+        role: 'Software Engineer Intern',
         date: 'Jan 2018 - December 2019',
         works:[
-            'lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eum ut ipsam ducimus fugit suscipit doloribus animi commodi cumque ratione earum obcaecati deleniti, quas consequuntur! Praesentium, ipsam! Illum, reiciendis est.',
-            'lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eum ut ipsam ducimus fugit suscipit doloribus animi commodi cumque ratione earum obcaecati deleniti, quas consequuntur! Praesentium, ipsam! Illum, reiciendis est.',
-            'lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eum ut ipsam ducimus fugit suscipit doloribus animi commodi cumque ratione earum obcaecati deleniti, quas consequuntur! Praesentium, ipsam! Illum, reiciendis est.',
-            'lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eum ut ipsam ducimus fugit suscipit doloribus animi commodi cumque ratione earum obcaecati deleniti, quas consequuntur! Praesentium, ipsam! Illum, reiciendis est.'
+            "Successfully Designed and Published an Automation tool for QNAP's NAS using Python, Django Framework, SQL, JavaScript and Docker. Thus automating the task for the user to save time.",
+            'Providing support to the customers by fixing the issues they face.',
+            'Maintaining the the application by fixing the bugs and adding New features.'
         ]
     },
     {
-        name: 'EFG',
+        name: 'Airport Authority of India (Nagpur)',
         key: 3,
-        role: 'Software Engineer',
-        date: 'Jan 2017 - May 2018',
+        role: 'Intern',
+        date: 'Jan 2018 - April 2018',
         works:[
-            'lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eum ut ipsam ducimus fugit suscipit doloribus animi commodi cumque ratione earum obcaecati deleniti, quas consequuntur! Praesentium, ipsam! Illum, reiciendis est.',
-            'lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eum ut ipsam ducimus fugit suscipit doloribus animi commodi cumque ratione earum obcaecati deleniti, quas consequuntur! Praesentium, ipsam! Illum, reiciendis est.',
-            'lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eum ut ipsam ducimus fugit suscipit doloribus animi commodi cumque ratione earum obcaecati deleniti, quas consequuntur! Praesentium, ipsam! Illum, reiciendis est.',
-            'lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eum ut ipsam ducimus fugit suscipit doloribus animi commodi cumque ratione earum obcaecati deleniti, quas consequuntur! Praesentium, ipsam! Illum, reiciendis est.'
-        ]
-    },
-    {
-        name: 'HIJ',
-        key: 4,
-        role: 'Software Engineer',
-        date: 'Feb 2014 - Jun 2016',
-        works:[
-            'lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eum ut ipsam ducimus fugit suscipit doloribus animi commodi cumque ratione earum obcaecati deleniti, quas consequuntur! Praesentium, ipsam! Illum, reiciendis est.',
-            'lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eum ut ipsam ducimus fugit suscipit doloribus animi commodi cumque ratione earum obcaecati deleniti, quas consequuntur! Praesentium, ipsam! Illum, reiciendis est.',
+            'Collaborated to Create a centralized log system for ATCO officers of Airport authority India.',
+            'Built the backend for the website using PHP and MySQL.',
+            'Managed the Team by assigning the task to team members and'
         ]
     }
 ]

@@ -10,7 +10,7 @@ const Intro = () => {
             <h2>
                 Thomas Devasia
             </h2>
-            <h5>i do bla bla something (not heading but bit bold)</h5> 
+            <h5>I am a Software Engineer specializing in Data Science and building Web Apps.</h5> 
 
             <p>
                 maybe a small para? or should be intro the same?
