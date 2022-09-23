@@ -6,9 +6,9 @@ const Footer = () => {
     return(
         <div className="footer">
             <div className='socials__icon'>
-                <Github/>
-                <Linkedin/>
-                <Twitter/>
+            <a href="https://github.com/thomasdevasia" target="_blank" rel="noopener noreferrer"> <Github/> </a>
+            <a href="https://www.linkedin.com/in/thomas-devasia1997/" target="_blank" rel="noopener noreferrer"> <Linkedin/> </a>
+            <a href="https://twitter.com/ThomasDev1997" target="_blank" rel="noopener noreferrer"> <Twitter/> </a>
             </div>
             <p>Designed & Built by Thomas Devasia</p>
             <p>2022</p>

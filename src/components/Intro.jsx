@@ -12,9 +12,9 @@ const Intro = () => {
             </h2>
             <h5>I am a Software Engineer specializing in Data Science and building Web Apps.</h5> 
 
-            <p>
+            {/* <p>
                 maybe a small para? or should be intro the same?
-            </p>
+            </p> */}
         </div>
 
         {/* <img className='intro__image' src={Profile} alt="profile" /> */}

@@ -1,6 +1,10 @@
 import { useRef, useEffect } from 'react'
 import github from '../images/logos/github.svg'
-import P1 from '../images/projects/p1.png'
+import qnap from '../images/projects/qnap.png'
+import portfolio from '../images/projects/portfolio.png'
+import stock_prediction from '../images/projects/stock_prediction.png'
+import gesture_keyboard from '../images/projects/gesture_keyboard.png'
+import noble_prize from '../images/projects/noble_prize.png'
 
 
 
@@ -8,42 +12,42 @@ const projects =[
                     {
                         id: 1,
                         title: 'PDF4me QNAP App',
-                        info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe officia quidem quaerat placeat distinctio dolorem.',
-                        techStack: ['JavaScript', 'React', 'JavaScript', 'React', 'JavaScript'],
-                        link: 'https://www.google.com',
-                        image: P1
+                        info: 'A QNAP NAS App that uses PDF4me API to automate the various tasks of PDF processing. This app was made during my internship.',
+                        techStack: ['Python', 'Django', 'Docker', 'JavaScript', 'Bash', 'SQLlite', 'REST API' ],
+                        link: '',
+                        image: qnap
                     },
                     {
                         id: 2,
                         title: 'Portfolio',
-                        info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe officia quidem quaerat placeat distinctio dolorem.',
-                        techStack: ['JavaScript', 'React', 'JavaScript', 'React', 'JavaScript'],
-                        link: 'https://www.google.com',
-                        image: P1
+                        info: 'This portfolio website acts as an extension to my resume with the aim of showcasing my skills and projects. The webiste is is hosted on Linode\'s cloud server.',
+                        techStack: ['React', 'JavaScript','Node.js', 'Sass', 'HTML', 'NGINX'],
+                        link: 'https://github.com/thomasdevasia/portfolio',
+                        image: portfolio
                     },
                     {
                         id: 3,
                         title: 'Stock Prediction',
-                        info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe officia quidem quaerat placeat distinctio dolorem.',
-                        techStack: ['JavaScript', 'React', 'JavaScript', 'React', 'JavaScript'],
-                        link: 'https://www.google.com',
-                        image: P1
+                        info: 'This jupyter notebook uses a LSTM model to predict the stock price of a company. The model is trained on the historical stock price data of the company.',
+                        techStack: ['Python', 'LSTM', 'CNN', 'Tensorflow', 'Keras'],
+                        link: 'https://github.com/thomasdevasia/stock_prediction',
+                        image: stock_prediction
                     },
                     {
                         id: 4,
                         title: 'Gesture Keyboard',
-                        info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe officia quidem quaerat placeat distinctio dolorem.',
-                        techStack: ['JavaScript', 'React', 'JavaScript', 'React', 'JavaScript'],
-                        link: 'https://www.google.com',
-                        image: P1
+                        info: 'The device uses aerial gestures to write on the screen. This was made using Arduino Nano microcontroller, Bluetooth module and Gyroscope sensor. ',
+                        techStack: ['Arduino', 'Python', 'scikit-learn', 'tkinter'],
+                        link: '',
+                        image: gesture_keyboard
                     },
                     {
                         id: 5,
                         title: 'Visualizing Nobel laureates using Dash',
-                        info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime totam laborum officia rem tenetur? Omnis, illo sit adipisci aliquid officiis quas et voluptates quis libero blanditiis vel sequi quidem ut.',
-                        techStack: ['JavaScript', 'React', 'JavaScript', 'React', 'JavaScript'],
-                        link: 'https://www.google.com',
-                        image: P1
+                        info: 'A web application that visualizes the Nobel laureates using Plotly\'s Dash framework. The data is fetched from the Nobel Prize API.',
+                        techStack: ['Python', 'JavaScript', 'HTML', 'CSS', 'Plotly', 'Dash'],
+                        link: 'https://github.com/thomasdevasia/DAV_21099593',
+                        image: noble_prize
                     }
                 ]
 const Projects = () => {
