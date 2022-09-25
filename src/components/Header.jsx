@@ -49,7 +49,7 @@ const Header = ({handleClick,isOpen}) => {
                     <li> <a href='#about'> About </a> </li>
                     <li> <a href='#experience'> Experience </a> </li>
                     <li> <a href='#portfolio'> Portfolio </a> </li>
-                    <li> <a href='#blog'> Blog </a> </li>
+                    <li> <a href='#blog1'> Blog </a> </li>
                 </ul>
 
                 <a className='btn btn__secondary dropin dropin-1' href='#resume'>Resume</a>
