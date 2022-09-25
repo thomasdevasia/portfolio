@@ -81,7 +81,7 @@ const Projects = () => {
                                 <img src={project.image} alt={project.title} />
                             </div>
                             <div className="project-content">
-                                <div className="project-title">{project.title}</div>
+                                <div className="project-title"><b>{project.title}</b></div>
                                 <div className="project-info">{project.info}</div>
                                 <ul className="project-techStack">
                                     {project.techStack.map((tech,idx) => (
