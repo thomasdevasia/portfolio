@@ -5,9 +5,9 @@ import Profile from '../images/profile.jpg'
 
 const About = () => {
     const aboutRef = useRef();
-    
-    const tech =["Python", "Machine Learning", "Tensorflow", "PyTorch", "Javascript", "Node.js", "React", "D3", "Express", "Database", "NoSQL"];
-    
+
+    const tech = ["Python", "Machine Learning", "Tensorflow", "PyTorch", "Javascript", "Node.js", "React", "D3", "Express", "Database", "SQL", "NoSQL", "Bash"];
+
     useEffect(() => {
         const ObserverOptions = {
             threshold: 0.5
@@ -20,14 +20,14 @@ const About = () => {
         }, ObserverOptions);
         Observer.observe(aboutRef.current);
     }, [])
-    
-    return(
+
+    return (
         <div className='about section initialState' ref={aboutRef} id='about'>
             <div className='section__heading'>About Me</div>
             <div className='about__inner section__inner'>
                 <div className='about__inner__content'>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    <p>Hello Internet! My name is Thomas Devasia and I am a software engineer. I specialize in building Web apps, Machine Learning and Data Science projects. But I love learning different programming languages and packages, like right now I am learning to code in Rust and preparing for my AWS certification. If I am not coding you can find me reading Manga’s or Comics and binging on Animes.</p>
+                    <p>I have just finished my Msc in Data Science and analytics from Cardiff University. Currently I am looking for very interesting Data Scientist or a Software Engineering role.</p>
                     <p>Here are a few technologies I’ve worked with recently:</p>
                     <ul className='list grid grid-2'>
                         {tech.map((item) => <li>{item}</li>)}
