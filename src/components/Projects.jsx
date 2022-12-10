@@ -6,6 +6,7 @@ import stock_prediction from '../images/projects/stock_prediction.png'
 import gesture_keyboard from '../images/projects/gesture_keyboard.png'
 import noble_prize from '../images/projects/noble_prize.png'
 import despeckling from '../images/projects/despeckling.png'
+import outlook_search from '../images/projects/outlook_search.png'
 
 
 
@@ -28,6 +29,14 @@ const projects = [
     },
     {
         id: 3,
+        title: 'Outlook Search API using Microsoft Graph',
+        info: 'I created this project for a friend of mine to automate his task. This project search for emails in Outlook, then searches inside the attachments of the emails for the relevant keywords and download those files.',
+        techStack: ['Python', 'Microsoft Graph', 'REST API'],
+        link: '',
+        image: outlook_search
+    },
+    {
+        id: 4,
         title: 'Despeckling SAR image',
         info: 'As a part of my final MSc Dissertation I had to use deep image prior (Based on deep convolutional Neural) to denoise the SAR images.',
         techStack: ['PyTorch', 'Python', 'Deep CNN'],
@@ -35,7 +44,7 @@ const projects = [
         image: despeckling
     },
     {
-        id: 4,
+        id: 5,
         title: 'Stock Prediction',
         info: 'This jupyter notebook uses a LSTM model to predict the stock price of a company. The model is trained on the historical stock price data of the company.',
         techStack: ['Python', 'LSTM', 'CNN', 'Tensorflow', 'Keras'],
@@ -43,7 +52,7 @@ const projects = [
         image: stock_prediction
     },
     {
-        id: 5,
+        id: 6,
         title: 'Gesture Keyboard',
         info: 'The device uses aerial gestures to write on the screen. This was made using Arduino Nano microcontroller, Bluetooth module and Gyroscope sensor. ',
         techStack: ['Arduino', 'Python', 'scikit-learn', 'tkinter'],
@@ -51,11 +60,12 @@ const projects = [
         image: gesture_keyboard
     },
     {
-        id: 6,
+        id: 7,
         title: 'Visualizing Nobel laureates using Dash',
         info: 'A web application that visualizes the Nobel laureates using Plotly\'s Dash framework. The data is fetched from the Nobel Prize API.',
         techStack: ['Python', 'JavaScript', 'HTML', 'CSS', 'Plotly', 'Dash'],
-        link: 'https://github.com/thomasdevasia/DAV_21099593',
+        // link: 'https://github.com/thomasdevasia/DAV_21099593',
+        link: 'https://github.com/thomasdevasia/DAV_21099593/tree/main/python',
         image: noble_prize
     }
 ]
