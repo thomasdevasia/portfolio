@@ -22,7 +22,7 @@ const projects = [
     {
         id: 2,
         title: ' Developer Portfolio',
-        info: 'This portfolio website acts as an extension to my resume with the aim of showcasing my skills and projects. The webiste is is hosted on Linode\'s cloud server.',
+        info: 'This portfolio website acts as an extension to my resume with the aim of showcasing my skills and projects. The website is hosted on Linode\'s cloud server.',
         techStack: ['React', 'JavaScript', 'Node.js', 'Sass', 'HTML', 'NGINX'],
         link: 'https://github.com/thomasdevasia/portfolio',
         image: portfolio
