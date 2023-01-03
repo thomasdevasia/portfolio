@@ -7,6 +7,7 @@ import gesture_keyboard from '../images/projects/gesture_keyboard.png'
 import noble_prize from '../images/projects/noble_prize.png'
 import despeckling from '../images/projects/despeckling.png'
 import outlook_search from '../images/projects/outlook_search.png'
+import gitignore_generator from '../images/projects/gitignore_generator.png'
 
 
 
@@ -28,11 +29,19 @@ const projects = [
         image: portfolio
     },
     {
+        id: 8,
+        title: 'Gitignore Generator',
+        info: 'A VSCode extension that generates .gitignore file for the project. The extension uses the gitignore.io API to fetch the .gitignore file.',
+        techStack: ['Javascript', 'Typescript', 'Node.js', 'VSCode Extension API'],
+        link: 'https://github.com/thomasdevasia/gitignoregenerator.git',
+        image: gitignore_generator
+    },
+    {
         id: 3,
         title: 'Outlook Search API using Microsoft Graph',
         info: 'I created this project for a friend of mine to automate his task. This project search for emails in Outlook, then searches inside the attachments of the emails for the relevant keywords and download those files.',
         techStack: ['Python', 'Microsoft Graph', 'REST API'],
-        link: '',
+        link: 'https://github.com/thomasdevasia/outlook_graph.git',
         image: outlook_search
     },
     {
