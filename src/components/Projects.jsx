@@ -103,8 +103,8 @@ const Projects = () => {
             </div>
             <div className="section__inner">
                 <ul className="projectlist">
-                    {projects.map(project => (
-                        <li className={`project ${project.id % 2 === 0 ? 'project-left' : 'project-right'}`} key={project.id}>
+                    {projects.map((project, index) => (
+                        <li className={`project ${index % 2 === 0 ? 'project-right' : 'project-left'}`} key={project.id}>
                             <div className="project-image">
                                 <img src={project.image} alt={project.title} />
                             </div>
