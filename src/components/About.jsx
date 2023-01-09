@@ -6,7 +6,7 @@ import Profile from '../images/profile.jpg'
 const About = () => {
     const aboutRef = useRef();
 
-    const tech = ["Python", "Machine Learning", "Tensorflow", "PyTorch", "Javascript", "Node.js", "React", "D3", "Express", "Database", "SQL", "NoSQL", "Bash"];
+    const tech = ["Python", "Machine Learning", "Tensorflow", "PyTorch", "Javascript", "Node.js", "React", "D3", "Express", "Database", "SQL", "NoSQL", "Bash", 'c++'];
 
     useEffect(() => {
         const ObserverOptions = {
