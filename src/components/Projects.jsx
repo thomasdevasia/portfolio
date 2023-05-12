@@ -8,6 +8,7 @@ import noble_prize from '../images/projects/noble_prize.png'
 import despeckling from '../images/projects/despeckling.png'
 import outlook_search from '../images/projects/outlook_search.png'
 import gitignore_generator from '../images/projects/gitignore_generator.png'
+import noImage from '../images/projects/no_image.png'
 
 
 
@@ -19,6 +20,14 @@ const projects = [
         techStack: ['Python', 'Django', 'Docker', 'JavaScript', 'Bash', 'SQLlite', 'REST API'],
         link: '',
         image: qnap
+    },
+    {
+        id: 9,
+        title: 'Willis Towers Watson (costs automation)',
+        info: "Assisted a WTW analyst with Python / Azure project they were working on. Built a script to search for relevant mails and extract relevant information from pdf and excel attachments using Microsoft’s Graph API, Python and FAST API. These details where then used to calculate and update across various excel sheets, PDF’s and then uploaded to relevant destinations. This script was deployed on Microsoft Azure function as a serverless application. Then later it was made available as a custom connector on Microsoft’s Power Automate platform. The new software saved analysts and associates a significant amount of time by automating many of the tasks they previously had to perform manually.",
+        techStack: ['Python', 'REST', 'Microsoft Graph', 'Microsoft Power Tools', 'Azure'],
+        link: '',
+        image: noImage
     },
     {
         id: 2,
