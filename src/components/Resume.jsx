@@ -1,5 +1,5 @@
 import { useRef, useEffect } from 'react';
-import ResumeImg from '../images/resume.png';
+import ResumeImg from '../images/resume.jpg';
 import resume from '../resume.pdf';
 // document.getElementById('resume').addEventListener('scroll', (e) => {
 //     console.log('clicked');
