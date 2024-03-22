@@ -21,14 +21,14 @@ const projects = [
         link: '',
         image: qnap
     },
-    {
-        id: 9,
-        title: 'Willis Towers Watson (automation: STIF entries, Position recon, Trade Costs & Matching)',
-        info: "Assisted a WTW analyst with Python / Azure project they were working on. Developed multiple scripts utilizing Microsoft's Graph API, Python, and FAST API to streamline various automation tasks, including searching for files in mails, extracting information from PDFs and Excel files and employing this data for calculations, updates, and modifications of Excel and PDF files, and converting data to JSON and XML formats. The script was deployed on the Microsoft Azure Functions platform as a serverless backend application. Later, it was seamlessly integrated as a custom connector within Microsoft's Power Automate platform to enhance relevant workflow processes. This innovative software significantly reduced the workload for analysts and associates by automating tasks that were previously carried out manually, resulting in substantial time savings.",
-        techStack: ['Python', 'REST', 'Microsoft Graph', 'Microsoft Power Tools', 'Azure', 'Azure Function', 'ML'],
-        link: '',
-        image: noImage
-    },
+    // {
+    //     id: 9,
+    //     title: 'Willis Towers Watson (automation: STIF entries, Position recon, Trade Costs & Matching)',
+    //     info: "Assisted a WTW analyst with Python / Azure project they were working on. Developed multiple scripts utilizing Microsoft's Graph API, Python, and FAST API to streamline various automation tasks, including searching for files in mails, extracting information from PDFs and Excel files and employing this data for calculations, updates, and modifications of Excel and PDF files, and converting data to JSON and XML formats. The script was deployed on the Microsoft Azure Functions platform as a serverless backend application. Later, it was seamlessly integrated as a custom connector within Microsoft's Power Automate platform to enhance relevant workflow processes. This innovative software significantly reduced the workload for analysts and associates by automating tasks that were previously carried out manually, resulting in substantial time savings.",
+    //     techStack: ['Python', 'REST', 'Microsoft Graph', 'Microsoft Power Tools', 'Azure', 'Azure Function', 'ML'],
+    //     link: '',
+    //     image: noImage
+    // },
     {
         id: 2,
         title: ' Developer Portfolio',
