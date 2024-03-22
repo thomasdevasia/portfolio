@@ -8,13 +8,21 @@ const companies = [
         role: 'Software Engineer',
         date: 'September 2020 - August 2021',
         works: [
-            'Worked on a document classifier model using machine learning to classify the documents based on types of documents.',
-            "Collaborated on building Node and Python-based applications as per client's requirements.",
-            "Providing support to customers by resolving any bugs and adding new features to the application. Thus enhancing the user experience.",
-            "Using Postman to create Postman API Collections to access various Features.",
-            "Building automation modules for Zapier and Integromat."
-
+            "Developed an automation system for daily Short-Term Investment Fund (STIF) movements, streamlining processes for a Swiss-based asset management client with coordination across 45 custodians.",
+            "Designed and implemented advanced Excel models to optimize Asset Liability Management strategies, enabling more accurate forecasting and risk assessment.",
+            "Engineered innovative tools to automate the calculation of trade costs, significantly improving operational efficiency and accuracy in financial analysis.",
+            "Developed and presented quarterly PPTs highlighting our tools to the clients, showcasing all the success and error reductions.",
+            "Collaborated on building a document classifier model to classify PDF documents containing transactions and a custom entity extraction model to extract information from document texts using the BERT Machine Learning model, Python, NLP and Spacy.",
+            "Created Pdf4me automation modules for Integromat and Zapier."
         ]
+        // works: [
+        //     'Worked on a document classifier model using machine learning to classify the documents based on types of documents.',
+        //     "Collaborated on building Node and Python-based applications as per client's requirements.",
+        //     "Providing support to customers by resolving any bugs and adding new features to the application. Thus enhancing the user experience.",
+        //     "Using Postman to create Postman API Collections to access various Features.",
+        //     "Building automation modules for Zapier and Integromat."
+
+        // ]
     },
     {
         name: 'Ynoox (Intern)',

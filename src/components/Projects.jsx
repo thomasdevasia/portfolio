@@ -8,7 +8,7 @@ import noble_prize from '../images/projects/noble_prize.png'
 import despeckling from '../images/projects/despeckling.png'
 import outlook_search from '../images/projects/outlook_search.png'
 import gitignore_generator from '../images/projects/gitignore_generator.png'
-import noImage from '../images/projects/no_image.png'
+// import noImage from '../images/projects/no_image.png'
 
 
 
